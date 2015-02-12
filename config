@@ -1,0 +1,14 @@
+[global]
+ApplicationName=kimzvik
+AwsCredentialFile=/Users/kimzvik/.elasticbeanstalk/aws_credential_file
+DevToolsEndpoint=git.elasticbeanstalk.us-west-1.amazonaws.com
+EnvironmentName=kimzvik-env
+EnvironmentTier=WebServer::Standard::1.0
+EnvironmentType=SingleInstance
+InstanceProfileName=aws-elasticbeanstalk-ec2-role
+OptionSettingFile=/Users/kimzvik/.elasticbeanstalk/optionsettings.kimzvik-env
+RdsEnabled=No
+Region=us-west-1
+ServiceEndpoint=https://elasticbeanstalk.us-west-1.amazonaws.com
+SolutionStack=32bit Amazon Linux 2014.03 v1.1.0 running Ruby 1.9.3
+
