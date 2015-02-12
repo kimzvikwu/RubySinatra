@@ -1,6 +1,6 @@
-FROM base
+FROM ubuntu
 
-MAINTAINER tcnksm "https://github.com/kimzvik"
+MAINTAINER kimzvik "https://github.com/kimzvik"
 
 # Install packages for building ruby
 RUN apt-get update
@@ -15,11 +15,11 @@ RUN cd /root/src/ruby-2.0.0-p247; ./configure; make install
 RUN gem update --system
 RUN gem install bundler
 
-RUN git clone https://github.com/kimzvik/RubySinatra
-RUN cd /root/sinatra; bundle install
+RUN git clone https://github.com/kimzvik/rubysinatra
+RUN cd /root/rubysinatra; bundle install
 
 EXPOSE 4567
-CMD ["/usr/local/bin/foreman","start","-d","/root/sinatra"]
+CMD ["/usr/local/bin/foreman","start","-d","/root/rubysinatra"]
 
 
 
